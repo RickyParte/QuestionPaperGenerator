@@ -7,6 +7,13 @@ exports.generateQuestionPaper = async (req, res) => {
         // get Request body 
         const { subject, difficulty, totalMarks } = req.body;
 
+        // check req field is not coming
+        if (!difficulty || !totalMarks) {
+            res.status(400).json({
+                data: "Please provide values for subject, difficulty, and totalMarks",
+            });
+        }
+
         // calculate total easy,medium,hard questions 
         const totalEasyQuestions = totalMarks / constant.EASY_MARKS;
         const totalMediumQuestion = totalMarks / constant.MEDIUM_MARKS;
@@ -49,7 +56,7 @@ exports.generateQuestionPaper = async (req, res) => {
     } catch (error) {
         res.status(500).json({
             status: 'failed',
-            error: "Internal Server Errror"
+            errror: "Internal Server Errror"
         });
     }
 };
