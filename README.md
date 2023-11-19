@@ -1,5 +1,11 @@
 # QuestionPaperGenerator
 
+# Add Question
+
+
+![image](https://github.com/RickyParte/QuestionPaperGenerator/assets/77445318/30e13fe8-4963-40e1-be3e-c51228eeabb6)
+
+
 #images of Testing
 
 ![image](https://github.com/RickyParte/QuestionPaperGenerator/assets/77445318/2484d7df-a1ad-477b-957c-618f93918a2d)
